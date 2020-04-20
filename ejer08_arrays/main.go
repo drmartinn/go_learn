@@ -28,6 +28,7 @@ func main() {
 	fmt.Println(slice2)
 	variante2()
 	variante3()
+	variante4()
 
 }
 
@@ -41,4 +42,12 @@ func variante2() {
 func variante3() {
 	elementos := make([]int, 5, 20)
 	fmt.Printf("Largo %d, Capacidad %d", len(elementos), cap(elementos))
+}
+
+func variante4() {
+	nums := make([]int, 0, 0)
+	for i := 0; i < 130; i++ {
+		nums = append(nums, i)
+	}
+	fmt.Printf("\nVariante4 Largo %d, Capacidad %d\n", len(nums), cap(nums))
 }
