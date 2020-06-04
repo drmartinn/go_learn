@@ -20,8 +20,7 @@ func ToCamelCase(s string) string {
 	var nextWordMustBeUpeer bool
 	for i, charVariable := range s {
 		if i==0 {
-			upper := IsNotUpper(int(charVariable))
-			if upper == false {
+			if IsNotUpper(int(charVariable)) == false {
 				textResult = string(int(charVariable) - 32)
 			}
 			textResult = string(charVariable)
